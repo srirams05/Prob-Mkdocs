@@ -50,8 +50,8 @@ extra_css:
 
 nav:
   - 'Home': 'index.md'  # Your landing page
-  - 'VAE Basics': 'chapter1.md'
-  - 'Transformer VAE': 'chapter2.md'
+  - 'Sets/Measures': 'chapter1.md'
+  - 'More Stuff': 'chapter2.md'
 
 
 repo_url: https://github.com/srirams05/Prob-Mkdocs
