@@ -1,5 +1,5 @@
 site_name: VAE Notes
-site_url: https://your-username.github.io/RL-Mkdocs/
+site_url: https://your-username.github.io/Prob-Mkdocs/
 
 
 theme:
@@ -54,5 +54,5 @@ nav:
   - 'Transformer VAE': 'chapter2.md'
 
 
-repo_url: https://github.com/srirams05/VAE-Mkdocs
+repo_url: https://github.com/srirams05/Prob-Mkdocs
 repo_name: GitHub

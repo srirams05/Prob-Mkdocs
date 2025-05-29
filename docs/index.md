@@ -1,4 +1,4 @@
-# Notes on Variational Autoencoders
+# Modern Probability Basics
 
 
 
@@ -6,15 +6,13 @@
 ## About the Book
 These notes on basic VAE architecture and extensions. We somewhat follow the notes:
 
-***Dynamical Variational
-Autoencoders: A Comprehensive
-Review*** 
-Laurent Girin, Simon Leglaive, Xiaoyu Bie, Julien Diard
+***Foundations of Modern Probability*** 
+Olav Kallenberg
 
-We use GPT-o1 and o4-mini for the Q&A which make up these notes.
+We use o-3 for the Q&A which make up these notes.
 
 
 ## Chapters Overview (for sidebar on Home page)
 
-*   [Chapter 1: Basic VAE](chapter1.md)
-*   [Chapter 2: Extension to Tranformer encoder](chapter2.md)
+*   [Chapter 1: Sets, Functions, Measures, Integration](chapter1.md)
+*   [Chapter 2: (More Stuff)](chapter2.md)
