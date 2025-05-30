@@ -408,42 +408,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-build-the-sigmafield-step-by-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Build the \(\sigma\)–field step by step
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-work-indirectly-with-the-defining-property" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Work indirectly with the defining property
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-borel-sigmafield-on-mathbb-r" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: Borel \(\sigma\)–field on \(\mathbb R\)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bottom-line" class="md-nav__link">
-    <span class="md-ellipsis">
-      Bottom line
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pi-system-lambda-system-and-sigmafield" class="md-nav__link">
     <span class="md-ellipsis">
       \(\pi\)-system, \(\lambda\)-system, and \(\sigma\)–field
@@ -538,8 +502,7 @@ A <span class="arithmatex">\(\sigma\)</span>–field (also called a <span class=
 <p><strong>Answer</strong></p>
 <p>You almost never enumerate “all <span class="arithmatex">\(\sigma\)</span>–fields that contain <span class="arithmatex">\(\mathcal A\)</span>.”<br />
 Instead you use one (or both) of the following practical principles.</p>
-<hr />
-<h2 id="1-build-the-sigmafield-step-by-step">1.  Build the <span class="arithmatex">\(\sigma\)</span>–field step by step<a class="headerlink" href="#1-build-the-sigmafield-step-by-step" title="Permanent link">&para;</a></h2>
+<p>1  <strong>Build the <span class="arithmatex">\(\sigma\)</span>–field step by step</strong></p>
 <p>Start with <span class="arithmatex">\(\mathcal A\)</span> and keep closing under the three defining
 operations.</p>
 <p>Let  </p>
@@ -563,17 +526,16 @@ operations.</p>
 <span class="arithmatex">\(\sigma(\mathcal A)\)</span>; conversely every step produced only sets that
 belong to some <span class="arithmatex">\(\sigma\)</span>–field that contains <span class="arithmatex">\(\mathcal A\)</span>, so
 <span class="arithmatex">\(\sigma(\mathcal A)\subset\mathcal A_\infty\)</span>.<br />
-Therefore<br />
-[
+Therefore  </p>
+<div class="arithmatex">\[
 \boxed{\;\sigma(\mathcal A)=\mathcal A_\infty\;}.
-]</p>
+\]</div>
 <p>In many concrete situations one succeeds in <em>explicitly</em> describing the
 sets that appear at a finite or countable step, so the construction can
 be done “by hand.”  (If <span class="arithmatex">\(\mathcal A\)</span> is very complicated more
 sophisticated transfinite recursion is needed, but the idea is the
 same.)</p>
-<hr />
-<h2 id="2-work-indirectly-with-the-defining-property">2.  Work <em>indirectly</em> with the defining property<a class="headerlink" href="#2-work-indirectly-with-the-defining-property" title="Permanent link">&para;</a></h2>
+<p>2  <strong>Work <em>indirectly</em> with the defining property</strong></p>
 <p>Suppose you want to prove that every set in <span class="arithmatex">\(\sigma(\mathcal A)\)</span> enjoys
 some property <span class="arithmatex">\(P\)</span>.  Let  </p>
 <div class="arithmatex">\[
@@ -601,8 +563,7 @@ Two celebrated refinements are used constantly:</p>
    <span class="arithmatex">\(\pi\)</span>–system.</p>
 <p>These tools let you circumvent any explicit construction; you only need
 to prove closure properties of an auxiliary family.</p>
-<hr />
-<h2 id="example-borel-sigmafield-on-mathbb-r">Example: Borel <span class="arithmatex">\(\sigma\)</span>–field on <span class="arithmatex">\(\mathbb R\)</span><a class="headerlink" href="#example-borel-sigmafield-on-mathbb-r" title="Permanent link">&para;</a></h2>
+<p><strong>Example: Borel <span class="arithmatex">\(\sigma\)</span>–field on <span class="arithmatex">\(\mathbb R\)</span></strong></p>
 <p>Take <span class="arithmatex">\(\mathcal A=\{(a,b):a&lt;b\}\)</span> (open intervals).</p>
 <ol>
 <li>
@@ -618,8 +579,7 @@ to prove closure properties of an auxiliary family.</p>
     <span class="arithmatex">\(\sigma(\mathcal A)\subset\mathcal G\)</span> and the result follows.</p>
 </li>
 </ol>
-<hr />
-<h2 id="bottom-line">Bottom line<a class="headerlink" href="#bottom-line" title="Permanent link">&para;</a></h2>
+<p><strong>Bottom line</strong></p>
 <p>Although the definition of <span class="arithmatex">\(\sigma(\mathcal A)\)</span> involves an abstract
 intersection over <em>all</em> <span class="arithmatex">\(\sigma\)</span>–fields, in practice you</p>
 <p>•  either construct it gradually via the closure operations,<br />
@@ -655,27 +615,19 @@ For a sub-family <span class="arithmatex">\(\mathcal F\subset\mathcal P(S)\)</sp
 <span class="arithmatex">\(\sigma\)</span>–fields are simultaneously <span class="arithmatex">\(\pi\)</span>–systems and <span class="arithmatex">\(\lambda\)</span>–systems.</p>
 <p>Conversely, if a family is <strong>both</strong> a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system, then it is automatically a <span class="arithmatex">\(\sigma\)</span>–field.</p>
 <p>Indeed, suppose <span class="arithmatex">\(\mathcal F\)</span> is <span class="arithmatex">\(\textit{both}\)</span> a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system.</p>
-<ol>
-<li>
-<p>Complements: because <span class="arithmatex">\(S\in\mathcal F\)</span> (λ–axiom 1),<br />
+<p>1 <strong>Complements</strong>: because <span class="arithmatex">\(S\in\mathcal F\)</span> (λ–axiom 1),<br />
    for any <span class="arithmatex">\(A\in\mathcal F\)</span> we have <span class="arithmatex">\(S\setminus A\in\mathcal F\)</span><br />
    by λ–axiom 2 (take <span class="arithmatex">\(B=S\)</span>).</p>
-</li>
-<li>
-<p>Finite unions: for <span class="arithmatex">\(A,B\in\mathcal F\)</span>,  </p>
-</li>
-</ol>
-<p>[
+<p>2 <strong>Finite unions</strong>: for <span class="arithmatex">\(A,B\in\mathcal F\)</span>,  </p>
+<div class="arithmatex">\[
      A\cup B \;=\; (A^{c}\cap B^{c})^{c},
- ]</p>
+\]</div>
 <p>and the right–hand side lies in <span class="arithmatex">\(\mathcal F\)</span> since</p>
 <p>• <span class="arithmatex">\(A^{c},B^{c}\in\mathcal F\)</span> by the previous step;<br />
    • <span class="arithmatex">\(A^{c}\cap B^{c}\in\mathcal F\)</span> because <span class="arithmatex">\(\mathcal F\)</span> is a <span class="arithmatex">\(\pi\)</span>–system;<br />
    • complements are again in <span class="arithmatex">\(\mathcal F\)</span>.</p>
 <p>By induction, all <span class="arithmatex">\(\textit{finite}\)</span> unions of sets in <span class="arithmatex">\(\mathcal F\)</span> belong to <span class="arithmatex">\(\mathcal F\)</span>.</p>
-<ol>
-<li>Countable unions: given an arbitrary sequence <span class="arithmatex">\((A_n)_{n\ge1}\subset\mathcal F\)</span>, define  </li>
-</ol>
+<p>3 <strong>Countable unions</strong>: given an arbitrary sequence <span class="arithmatex">\((A_n)_{n\ge1}\subset\mathcal F\)</span>, define  </p>
 <div class="arithmatex">\[
     C_n \;=\; \bigcup_{k=1}^{n}A_k\quad(n\ge1).
 \]</div>
