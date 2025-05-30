@@ -210,7 +210,7 @@ $\sigma$–fields are simultaneously $\pi$–systems and $\lambda$–systems.
 
 Conversely, if a family is **both** a $\pi$–system and a $\lambda$–system, then it is automatically a $\sigma$–field.
 
-Indeed, suppose $\mathcal F$ is \emph{both} a $\pi$–system and a $\lambda$–system.
+Indeed, suppose $\mathcal F$ is $\textit{both}$ a $\pi$–system and a $\lambda$–system.
 
 1. Complements: because $S\in\mathcal F$ (λ–axiom 1),  
    for any $A\in\mathcal F$ we have $S\setminus A\in\mathcal F$  
@@ -230,7 +230,7 @@ Indeed, suppose $\mathcal F$ is \emph{both} a $\pi$–system and a $\lambda$–s
    • $A^{c}\cap B^{c}\in\mathcal F$ because $\mathcal F$ is a $\pi$–system;  
    • complements are again in $\mathcal F$.
 
-   By induction, all \emph{finite} unions of sets in $\mathcal F$ belong to $\mathcal F$.
+   By induction, all $\textit{finite}$ unions of sets in $\mathcal F$ belong to $\mathcal F$.
 
 3. Countable unions: given an arbitrary sequence $(A_n)_{n\ge1}\subset\mathcal F$, define  
 
@@ -275,4 +275,4 @@ and, in particular,
 \Sigma \;\subset\; \Lambda .
 \]
 
-In words: every $\sigma$–field is both a $\pi$–system and a $\lambda$–system, and a family of subsets is a $\sigma$–field \emph{iff} it is simultaneously a $\pi$–system and a $\lambda$–system.
+In words: every $\sigma$–field is both a $\pi$–system and a $\lambda$–system, and a family of subsets is a $\sigma$–field $\textit{iff}$ it is simultaneously a $\pi$–system and a $\lambda$–system.
