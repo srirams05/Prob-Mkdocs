@@ -167,3 +167,112 @@ intersection over *all* $\sigma$–fields, in practice you
 
 Both approaches eliminate any need to enumerate $\sigma$–fields
 explicitly.
+
+## $\pi$-system, $\lambda$-system, and $\sigma$–field
+
+
+
+Since a $\sigma$-field, a $\pi$-system and a $\lambda$-system are all families of subsets, for a properly defined setup of these families, what does the inclusion statement look like among the three?
+
+
+
+**Answer**
+
+
+Let $S$ be a fixed non–empty set and write $\mathcal P(S)$ for its power set.  
+For a sub-family $\mathcal F\subset\mathcal P(S)$ recall
+
+• $\mathcal F$ is a $\pi$–system  $\Longleftrightarrow$  $A,B\in\mathcal F\;\Rightarrow\;A\cap B\in\mathcal F$;
+
+• $\mathcal F$ is a $\lambda$–system ($=$ Dynkin system) if  
+
+ 1. $S\in\mathcal F$;  
+ 2. $A,B\in\mathcal F,\;A\subset B\;\Rightarrow\;B\setminus A\in\mathcal F$;  
+ 3. $(A_n)_{n\ge1}\subset\mathcal F,\;A_n\uparrow\;\Rightarrow\;\bigcup_{n=1}^{\infty}A_n\in\mathcal F$.
+
+• $\mathcal F$ is a $\sigma$–field if it contains $S$, is closed under complements, and under countable unions (hence also under countable intersections).
+
+**Inclusion relations for the three classes**
+
+Fix a family $\mathcal F\subset\mathcal P(S)$.  Then
+
+\[
+\text{“}\mathcal F\text{ is a }\sigma\text{-field”}
+\;\;\Longrightarrow\;\;
+\begin{cases}
+\text{“}\mathcal F\text{ is a }\pi\text{-system”},\\[4pt]
+\text{“}\mathcal F\text{ is a }\lambda\text{-system”.}
+\end{cases}
+\]
+
+That is,
+$\sigma$–fields are simultaneously $\pi$–systems and $\lambda$–systems.
+
+Conversely, if a family is **both** a $\pi$–system and a $\lambda$–system, then it is automatically a $\sigma$–field.
+
+Indeed, suppose $\mathcal F$ is \emph{both} a $\pi$–system and a $\lambda$–system.
+
+1. Complements: because $S\in\mathcal F$ (λ–axiom 1),  
+   for any $A\in\mathcal F$ we have $S\setminus A\in\mathcal F$  
+   by λ–axiom 2 (take $B=S$).
+
+2. Finite unions: for $A,B\in\mathcal F$,  
+
+   
+ \[
+     A\cup B \;=\; (A^{c}\cap B^{c})^{c},
+ \]
+
+   
+   and the right–hand side lies in $\mathcal F$ since
+
+   • $A^{c},B^{c}\in\mathcal F$ by the previous step;  
+   • $A^{c}\cap B^{c}\in\mathcal F$ because $\mathcal F$ is a $\pi$–system;  
+   • complements are again in $\mathcal F$.
+
+   By induction, all \emph{finite} unions of sets in $\mathcal F$ belong to $\mathcal F$.
+
+3. Countable unions: given an arbitrary sequence $(A_n)_{n\ge1}\subset\mathcal F$, define  
+
+   
+\[
+    C_n \;=\; \bigcup_{k=1}^{n}A_k\quad(n\ge1).
+\]
+
+   
+   We just saw that every $C_n\in\mathcal F$, and $(C_n)$ is an increasing sequence.  
+   Hence, by λ–axiom 3,
+
+   
+\[
+   \bigcup_{n=1}^{\infty}A_n \;=\; \bigcup_{n=1}^{\infty}C_n \;\in\;\mathcal F .
+\]
+
+Thus $\mathcal F$ satisfies all three $\sigma$–field axioms.
+
+**Summary**
+
+Let  
+
+\[
+\begin{aligned}
+\Sigma &= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\sigma\text{-field}\},\\
+\Pi    &= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\pi\text{-system}\},\\
+\Lambda&= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\lambda\text{-system}\}.
+\end{aligned}
+\]
+
+Then
+
+\[
+\boxed{\;\Sigma \;=\; \Pi \cap \Lambda\;}
+\]
+
+and, in particular,
+
+\[
+\Sigma \;\subset\; \Pi,\qquad
+\Sigma \;\subset\; \Lambda .
+\]
+
+In words: every $\sigma$–field is both a $\pi$–system and a $\lambda$–system, and a family of subsets is a $\sigma$–field \emph{iff} it is simultaneously a $\pi$–system and a $\lambda$–system.
