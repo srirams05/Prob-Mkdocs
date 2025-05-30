@@ -443,6 +443,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pi-system-lambda-system-and-sigmafield" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\pi\)-system, \(\lambda\)-system, and \(\sigma\)–field
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -621,6 +630,80 @@ intersection over <em>all</em> <span class="arithmatex">\(\sigma\)</span>–fiel
    \sigma(\mathcal A)\subset\mathcal G\)</span>.”</p>
 <p>Both approaches eliminate any need to enumerate <span class="arithmatex">\(\sigma\)</span>–fields
 explicitly.</p>
+<h2 id="pi-system-lambda-system-and-sigmafield"><span class="arithmatex">\(\pi\)</span>-system, <span class="arithmatex">\(\lambda\)</span>-system, and <span class="arithmatex">\(\sigma\)</span>–field<a class="headerlink" href="#pi-system-lambda-system-and-sigmafield" title="Permanent link">&para;</a></h2>
+<p>Since a <span class="arithmatex">\(\sigma\)</span>-field, a <span class="arithmatex">\(\pi\)</span>-system and a <span class="arithmatex">\(\lambda\)</span>-system are all families of subsets, for a properly defined setup of these families, what does the inclusion statement look like among the three?</p>
+<p><strong>Answer</strong></p>
+<p>Let <span class="arithmatex">\(S\)</span> be a fixed non–empty set and write <span class="arithmatex">\(\mathcal P(S)\)</span> for its power set.<br />
+For a sub-family <span class="arithmatex">\(\mathcal F\subset\mathcal P(S)\)</span> recall</p>
+<p>• <span class="arithmatex">\(\mathcal F\)</span> is a <span class="arithmatex">\(\pi\)</span>–system  <span class="arithmatex">\(\Longleftrightarrow\)</span>  <span class="arithmatex">\(A,B\in\mathcal F\;\Rightarrow\;A\cap B\in\mathcal F\)</span>;</p>
+<p>• <span class="arithmatex">\(\mathcal F\)</span> is a <span class="arithmatex">\(\lambda\)</span>–system (<span class="arithmatex">\(=\)</span> Dynkin system) if  </p>
+<p>1. <span class="arithmatex">\(S\in\mathcal F\)</span>;<br />
+ 2. <span class="arithmatex">\(A,B\in\mathcal F,\;A\subset B\;\Rightarrow\;B\setminus A\in\mathcal F\)</span>;<br />
+ 3. <span class="arithmatex">\((A_n)_{n\ge1}\subset\mathcal F,\;A_n\uparrow\;\Rightarrow\;\bigcup_{n=1}^{\infty}A_n\in\mathcal F\)</span>.</p>
+<p>• <span class="arithmatex">\(\mathcal F\)</span> is a <span class="arithmatex">\(\sigma\)</span>–field if it contains <span class="arithmatex">\(S\)</span>, is closed under complements, and under countable unions (hence also under countable intersections).</p>
+<p><strong>Inclusion relations for the three classes</strong></p>
+<p>Fix a family <span class="arithmatex">\(\mathcal F\subset\mathcal P(S)\)</span>.  Then</p>
+<div class="arithmatex">\[
+\text{“}\mathcal F\text{ is a }\sigma\text{-field”}
+\;\;\Longrightarrow\;\;
+\begin{cases}
+\text{“}\mathcal F\text{ is a }\pi\text{-system”},\\[4pt]
+\text{“}\mathcal F\text{ is a }\lambda\text{-system”.}
+\end{cases}
+\]</div>
+<p>That is,
+<span class="arithmatex">\(\sigma\)</span>–fields are simultaneously <span class="arithmatex">\(\pi\)</span>–systems and <span class="arithmatex">\(\lambda\)</span>–systems.</p>
+<p>Conversely, if a family is <strong>both</strong> a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system, then it is automatically a <span class="arithmatex">\(\sigma\)</span>–field.</p>
+<p>Indeed, suppose <span class="arithmatex">\(\mathcal F\)</span> is \emph{both} a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system.</p>
+<ol>
+<li>
+<p>Complements: because <span class="arithmatex">\(S\in\mathcal F\)</span> (λ–axiom 1),<br />
+   for any <span class="arithmatex">\(A\in\mathcal F\)</span> we have <span class="arithmatex">\(S\setminus A\in\mathcal F\)</span><br />
+   by λ–axiom 2 (take <span class="arithmatex">\(B=S\)</span>).</p>
+</li>
+<li>
+<p>Finite unions: for <span class="arithmatex">\(A,B\in\mathcal F\)</span>,  </p>
+</li>
+</ol>
+<p>[
+     A\cup B \;=\; (A^{c}\cap B^{c})^{c},
+ ]</p>
+<p>and the right–hand side lies in <span class="arithmatex">\(\mathcal F\)</span> since</p>
+<p>• <span class="arithmatex">\(A^{c},B^{c}\in\mathcal F\)</span> by the previous step;<br />
+   • <span class="arithmatex">\(A^{c}\cap B^{c}\in\mathcal F\)</span> because <span class="arithmatex">\(\mathcal F\)</span> is a <span class="arithmatex">\(\pi\)</span>–system;<br />
+   • complements are again in <span class="arithmatex">\(\mathcal F\)</span>.</p>
+<p>By induction, all \emph{finite} unions of sets in <span class="arithmatex">\(\mathcal F\)</span> belong to <span class="arithmatex">\(\mathcal F\)</span>.</p>
+<ol>
+<li>Countable unions: given an arbitrary sequence <span class="arithmatex">\((A_n)_{n\ge1}\subset\mathcal F\)</span>, define  </li>
+</ol>
+<div class="arithmatex">\[
+    C_n \;=\; \bigcup_{k=1}^{n}A_k\quad(n\ge1).
+\]</div>
+<p>We just saw that every <span class="arithmatex">\(C_n\in\mathcal F\)</span>, and <span class="arithmatex">\((C_n)\)</span> is an increasing sequence.<br />
+   Hence, by λ–axiom 3,</p>
+<div class="arithmatex">\[
+   \bigcup_{n=1}^{\infty}A_n \;=\; \bigcup_{n=1}^{\infty}C_n \;\in\;\mathcal F .
+\]</div>
+<p>Thus <span class="arithmatex">\(\mathcal F\)</span> satisfies all three <span class="arithmatex">\(\sigma\)</span>–field axioms.</p>
+<p><strong>Summary</strong></p>
+<p>Let  </p>
+<div class="arithmatex">\[
+\begin{aligned}
+\Sigma &amp;= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\sigma\text{-field}\},\\
+\Pi    &amp;= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\pi\text{-system}\},\\
+\Lambda&amp;= \{\mathcal F\subset\mathcal P(S):\mathcal F\text{ is a }\lambda\text{-system}\}.
+\end{aligned}
+\]</div>
+<p>Then</p>
+<div class="arithmatex">\[
+\boxed{\;\Sigma \;=\; \Pi \cap \Lambda\;}
+\]</div>
+<p>and, in particular,</p>
+<div class="arithmatex">\[
+\Sigma \;\subset\; \Pi,\qquad
+\Sigma \;\subset\; \Lambda .
+\]</div>
+<p>In words: every <span class="arithmatex">\(\sigma\)</span>–field is both a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system, and a family of subsets is a <span class="arithmatex">\(\sigma\)</span>–field \emph{iff} it is simultaneously a <span class="arithmatex">\(\pi\)</span>–system and a <span class="arithmatex">\(\lambda\)</span>–system.</p>
 
 
 
