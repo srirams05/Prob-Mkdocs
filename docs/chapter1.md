@@ -50,9 +50,7 @@ The definition of $\sigma(\mathcal{A})$ is clear. In practice, how does on work 
 You almost never enumerate “all $\sigma$–fields that contain $\mathcal A$.”  
 Instead you use one (or both) of the following practical principles.
 
---------------------------------------------------------------------
-1.  Build the $\sigma$–field step by step
---------------------------------------------------------------------
+1  **Build the $\sigma$–field step by step**
 
 Start with $\mathcal A$ and keep closing under the three defining
 operations.
@@ -83,6 +81,7 @@ $\sigma(\mathcal A)$; conversely every step produced only sets that
 belong to some $\sigma$–field that contains $\mathcal A$, so
 $\sigma(\mathcal A)\subset\mathcal A_\infty$.  
 Therefore  
+
 \[
 \boxed{\;\sigma(\mathcal A)=\mathcal A_\infty\;}.
 \]
@@ -93,9 +92,7 @@ be done “by hand.”  (If $\mathcal A$ is very complicated more
 sophisticated transfinite recursion is needed, but the idea is the
 same.)
 
---------------------------------------------------------------------
-2.  Work *indirectly* with the defining property
---------------------------------------------------------------------
+2  **Work *indirectly* with the defining property**
 
 Suppose you want to prove that every set in $\sigma(\mathcal A)$ enjoys
 some property $P$.  Let  
@@ -135,9 +132,7 @@ Two celebrated refinements are used constantly:
 These tools let you circumvent any explicit construction; you only need
 to prove closure properties of an auxiliary family.
 
---------------------------------------------------------------------
-Example: Borel $\sigma$–field on $\mathbb R$
---------------------------------------------------------------------
+**Example: Borel $\sigma$–field on $\mathbb R$**
 
 Take $\mathcal A=\{(a,b):a<b\}$ (open intervals).
 
@@ -151,9 +146,7 @@ Take $\mathcal A=\{(a,b):a<b\}$ (open intervals).
     interval.  By the indirect principle,
     $\sigma(\mathcal A)\subset\mathcal G$ and the result follows.
 
---------------------------------------------------------------------
-Bottom line
---------------------------------------------------------------------
+**Bottom line**
 
 Although the definition of $\sigma(\mathcal A)$ involves an abstract
 intersection over *all* $\sigma$–fields, in practice you
@@ -212,16 +205,16 @@ Conversely, if a family is **both** a $\pi$–system and a $\lambda$–system, t
 
 Indeed, suppose $\mathcal F$ is $\textit{both}$ a $\pi$–system and a $\lambda$–system.
 
-1. Complements: because $S\in\mathcal F$ (λ–axiom 1),  
+1 **Complements**: because $S\in\mathcal F$ (λ–axiom 1),  
    for any $A\in\mathcal F$ we have $S\setminus A\in\mathcal F$  
    by λ–axiom 2 (take $B=S$).
 
-2. Finite unions: for $A,B\in\mathcal F$,  
+2 **Finite unions**: for $A,B\in\mathcal F$,  
 
    
- \[
+\[
      A\cup B \;=\; (A^{c}\cap B^{c})^{c},
- \]
+\]
 
    
    and the right–hand side lies in $\mathcal F$ since
@@ -232,7 +225,7 @@ Indeed, suppose $\mathcal F$ is $\textit{both}$ a $\pi$–system and a $\lambda$
 
    By induction, all $\textit{finite}$ unions of sets in $\mathcal F$ belong to $\mathcal F$.
 
-3. Countable unions: given an arbitrary sequence $(A_n)_{n\ge1}\subset\mathcal F$, define  
+3 **Countable unions**: given an arbitrary sequence $(A_n)_{n\ge1}\subset\mathcal F$, define  
 
    
 \[
